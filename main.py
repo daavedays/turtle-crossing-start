@@ -19,6 +19,8 @@ car_manager.hideturtle()
 
 game_is_on = True
 while game_is_on:
+    """Main game loop, where the logic of the game is being handled.
+       The collisions with the obstacles, their motion, the turtles motion, and the difficulty level."""
     screen.update()
     time.sleep(player.speed)
     car_manager.cars_drive()
@@ -34,9 +36,4 @@ while game_is_on:
                 and car.ycor() - 20 < player.ycor() < car.ycor() + 20):
             scoreboard.game_over()
             game_is_on = False
-
-            print(player.ycor())
-            print(car.ycor())
-            print(round(player.xcor()), 4)
-            print(car.xcor())
 screen.exitonclick()
