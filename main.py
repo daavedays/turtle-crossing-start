@@ -20,7 +20,7 @@ car_manager.hideturtle()
 game_is_on = True
 while game_is_on:
     """Main game loop, where the logic of the game is being handled.
-       The collisions with the obstacles, their motion, the turtles motion, and the difficulty level."""
+       The collisions with the obstacles, their motion, the turtles motion."""
     screen.update()
     time.sleep(player.speed)
     car_manager.cars_drive()
